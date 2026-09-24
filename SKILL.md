@@ -145,6 +145,7 @@ version: 0.1.0
 - 七件套产物写入 `docs/`(本项目约定:业务架构/产品架构/用户画像等),用各自 template。
 - 关键决策/推敲记 `decisions/decision-log.md` + 推进位置看 `backlog/process.md`。
 - 产出新教训 → memory 两处同步(`memory/` + `~/.claude`),格式见 `crm-ideation-lesson`。
+- **(可选,看本仓库习惯)生成 HTML 可视化门户**:本项目习惯把定稿的架构/画像/旅程/指标树等生成 `docs/html/*.html` 单页视图(深色顶栏+导航,tab 切换),便于浏览器查看、分享。规则:①每个视图一个独立 `.html` 文件,索引页 `index.html` 卡片式导航聚合 ②**改 HTML 时必须同步改对应 md 源**,两手要一致(以 md 为母本,HTML 是渲染视图) ③交互类 HTML 必须过全局「HTML/前端交付验证规范」的 jsdom 运行时校验(见 ~/.claude/CLAUDE.md),不能只做静态配平检查。此步是展示/沟通习惯,非蓝图方法论本身,非必经步骤——不生成 HTML 不影响蓝图定稿。
 
 ## 关联
 
